@@ -14,6 +14,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+permissions:
+  contents: write         # required for dependency submission
+  security-events: write  # required for dependency graph API
+
 jobs:
   build:
 
